@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <button class="js-open-menu menu-button">☰ Menu</button>
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="js-menu-container mobile-menu">
+      <button class="js-close-menu close-button">×</button>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h1>Welcome</h1>
+        <p>Contact Page</p>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
