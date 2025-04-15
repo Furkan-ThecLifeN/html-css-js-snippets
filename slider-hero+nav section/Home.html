@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <ul class="ul-list">
+          <li class="home-page"><a href="Home.html" class="page">Home</a></li>
+          <li class="favorites-page"><a href="Favorites.html" class="page">Favorites</a></li>
+        </ul>
+        <a href="Home.html" class="logo">tasty<span>treats</span></a>
+        <div class="theme-toggle">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch">
+              <input type="checkbox" id="themeToggle" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-slider">
+        <div class="title-section">
+          <div class="title-container">
+            <h1>
+              Learn to Cook <span>Tasty Treats'</span> Customizable Masterclass
+            </h1>
+            <p>
+              TastyTreats - Customize Your Meal with Ingredient Options and
+              Step-by-Step Video Guides.
+            </p>
+            <button class="hero-slider-btn">Order Now</button>
+          </div>
+        </div>
+        <div class="image-slider-section">
+          <div class="infinite-slider-wrapper">
+            <div class="infinite-slider">
+              <div class="slide">
+                <div class="img-container">
+                  <img src="./images/chef-01.jpg" alt="Chef 1" />
+                </div>
+                <div class="img-container">
+                  <img src="./images/meat-small.png" alt="Meat SM" />
+                </div>
+                <div class="img-container">
+                  <img src="./images/meat-large.png" alt="Meat LG" />
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="img-container">
+                  <img src="./images/chef-02.jpg" alt="Chef 1" />
+                </div>
+                <div class="img-container">
+                  <img src="./images/pizza-small.png" alt="pizza SM" />
+                </div>
+                <div class="img-container">
+                  <img src="./images/pizza-large.png" alt="pizza LG" />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="img-container">
+                  <img src="./images/chef-03.jpg" alt="Chef 1" />
+                </div>
+                <div class="img-container">
+                  <img src="./images/cake-small.png" alt="cake SM" />
+                </div>
+                <div class="img-container">
+                  <img src="./images/cake-large.png" alt="cake LG" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
