@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TastyTreats - Recipe App</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../logo.jpg" type="image/x-icon" />
+  </head>
+  <body class="light">
+    <header class="header">
+      <nav class="navbar">
+        <ul class="ul-list">
+          <li class="home-page"><a href="index.html" class="page">Home</a></li>
+          <li class="favorites-page"><a href="#" class="page">Favorites</a></li>
+        </ul>
+        <a href="index.html" class="logo">tasty<span>treats</span></a>
+        <div class="theme-toggle">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch">
+              <input type="checkbox" id="themeToggle" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-slider">
+        <div class="title-section">
+          <div class="title-container">
+            <h1>
+              Learn to Cook <span>Tasty Treats'</span> Customizable Masterclass
+            </h1>
+            <p>
+              TastyTreats - Customize Your Meal with Ingredient Options and
+              Step-by-Step Video Guides.
+            </p>
+            <button class="hero-slider-btn">Order Now</button>
+          </div>
+        </div>
+        <div class="image-slider-section">
+          <div class="infinite-slider-wrapper">
+            <div class="infinite-slider">
+              <div class="slide">
+                <div class="img-container">
+                  <img src="./images/chef-01.jpg" alt="Chef 1" />
+                </div>
+                <div class="img-container">
+                  <img src="./images/meat-small.png" alt="Meat SM" />
+                </div>
+                <div class="img-container">
+                  <img src="./images/meat-large.png" alt="Meat LG" />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="img-container">
+                  <img src="./images/chef-02.jpg" alt="Chef 2" />
+                </div>
+                <div class="img-container">
+                  <img src="./images/pizza-small.png" alt="Pizza SM" />
+                </div>
+                <div class="img-container">
+                  <img src="./images/pizza-large.png" alt="Pizza LG" />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="img-container">
+                  <img src="./images/chef-03.jpg" alt="Chef 3" />
+                </div>
+                <div class="img-container">
+                  <img src="./images/cake-small.png" alt="Cake SM" />
+                </div>
+                <div class="img-container">
+                  <img src="./images/cake-large.png" alt="Cake LG" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product">
+        <div class="second-section">
+          <div class="filter-section">
+            <div class="filters">
+              <div class="search-input">
+                <i class="fas fa-search"></i>
+                <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="Search recipes..."
+                />
+              </div>
+              <div class="filter-box time">
+                <div class="filter-product">
+                  <span id="timeDisplay">Time</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="dropdown" id="timeDropdown">
+                  <div data-value="5">5 mins</div>
+                  <div data-value="10">10 mins</div>
+                  <div data-value="20">20 mins</div>
+                  <div data-value="30">30 mins</div>
+                  <div data-value="40">40 mins</div>
+                  <div data-value="50">50 mins</div>
+                  <div data-value="60">60+ mins</div>
+                  <div data-value="">All times</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="productList-section">
+            <div id="recipeContainer" class="product-rows">
+              <!-- Recipes will be populated here by JavaScript -->
+            </div>
+            <div class="pagination-section">
+              <div class="pagination" id="pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

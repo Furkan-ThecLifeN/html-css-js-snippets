@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pexels ile Dinamik Galeri</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../logo.jpg" type="image/x-icon" />
+</head>
+<body>
+  <h1>Pexels Dinamik Foto Galerisi</h1>
+
+  <div class="search-container">
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Arama terimini girin… (örn: ocean, city)" />
+      <button type="submit" id="search-button">Ara</button>
+    </form>
+  </div>
+
+  <div id="gallery"></div>
+  <button id="load-more">Daha Fazla Yükle</button>
+
+  <!-- JS dosyaları -->
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

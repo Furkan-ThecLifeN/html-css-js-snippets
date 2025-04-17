@@ -28,5 +28,4 @@ function moveToNextSlide() {
   slider.style.transform = `translateX(${offset}%)`;
 }
 
-// Slider her 5 saniyede bir kayacak
-setInterval(moveToNextSlide, 5000); // 5 saniye
+setInterval(moveToNextSlide, 5000); 
