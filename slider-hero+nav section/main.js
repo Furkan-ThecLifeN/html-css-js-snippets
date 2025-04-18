@@ -1,3 +1,5 @@
+/* Nav JS */
+
 const themeToggle = document.getElementById("themeToggle");
 
 function setTheme(theme) {

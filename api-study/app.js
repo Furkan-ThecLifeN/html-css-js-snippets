@@ -1,4 +1,3 @@
-// app.js
 import { fetchPhotos } from "./api.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -9,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentQuery = "";
   let currentPage = 1;
-  const PER_PAGE = 12;
+  const PER_PAGE = 15;
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -34,17 +33,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const card = document.createElement("div");
       card.className = "card";
       card.innerHTML = `
-        <div class="img-wrap">
-          <img src="${photo.src.medium}" alt="${photo.alt || ""}">
-        </div>
-        <div class="card-content">
+      <div class="img-wrap">
+        <img src="${photo.src.medium}" alt="${photo.alt || ""}">
+      </div>
+      <div class="card-content">
           <h3>${photo.alt || "Untitled"}</h3>
           <p>By: ${photo.photographer}</p>
           <a href="${
             photo.url
           }" target="_blank" rel="noopener">View on Pexels</a>
-        </div>
-      `;
+      </div>`;
       gallery.appendChild(card);
     });
     loadMore.disabled = false;
